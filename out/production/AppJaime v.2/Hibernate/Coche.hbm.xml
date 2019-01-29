@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="Coche" table="coches">
+        <id name="Id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+
+        <property name="nombre" type="string">
+            <column name="Nombre" length="20" not-null="true" />
+        </property>
+
+        <property name="descripcion" type="string">
+            <column name="Descripcion" length="100" not-null="true" />
+        </property>
+        <property name="caracteristica1" type="string">
+            <column name="Caracteristica1" length="190" not-null="true" />
+        </property>
+        <property name="caracteristica2" type="string">
+            <column name="Caracteristica2" length="190" not-null="true" />
+        </property>
+        <property name="marca" type="int">
+            <column name="ID_Fabricante" length="10" not-null = "true"/>
+        </property>
+
+    </class>
+
+</hibernate-mapping>

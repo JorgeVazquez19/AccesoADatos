@@ -12,6 +12,8 @@ public interface InterfazBBDD {
 
     public void BBDDTXT() throws SQLException, IOException;
     
+    public void PasarDatos();
+    
     public void Actualizar() throws SQLException;
     
     public void Borrar() throws SQLException;

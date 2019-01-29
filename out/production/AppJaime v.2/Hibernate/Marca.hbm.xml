@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="Marca" table="marca">
+
+        <id name="id_fabricante" type="int">
+            <column name="ID_Fabricante" />
+        </id>
+        <property name="Nombre" type="string">
+            <column name="Nombre" length="20" not-null="true" />
+        </property>
+        <property name="Sede" type="string">
+            <column name="Sede" length="100" not-null="true" />
+        </property>
+
+    </class>
+
+</hibernate-mapping>

@@ -541,5 +541,11 @@ public class ConexionBBDD implements InterfazBBDD {
 		
 	}
 
+	@Override
+	public void PasarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }
